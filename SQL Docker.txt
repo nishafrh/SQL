@@ -1,0 +1,5 @@
+docker run --name mysql -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=asdd -e MYSQL_DATABASE=laravel mysql:8
+docker run --name sql_server -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Rahasia@1" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+docker run --name postgresql -d -p 5432:5432 -e POSTGRES_PASSWORD=asdd postgres:latest
+
+docker run -p 6379:6379 -d redis
